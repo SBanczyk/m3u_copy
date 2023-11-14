@@ -1,5 +1,6 @@
 import os.path
 import shutil
+import sys
 
 
 def m3u_copy(source, destination):
@@ -31,4 +32,4 @@ def m3u_copy(source, destination):
                     return
 
 
-m3u_copy("source/file1.m3u", "destination/")
+m3u_copy(sys.argv[1], sys.argv[2])
