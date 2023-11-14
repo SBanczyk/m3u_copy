@@ -3,6 +3,7 @@ import shutil
 import sys
 
 
+
 def m3u_copy(source, destination):
     try:
         file = open(source).readlines()
