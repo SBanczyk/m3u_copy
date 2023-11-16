@@ -33,7 +33,10 @@ def m3u_copy(source, destination):
 
 
 def main():
-    m3u_copy(sys.argv[1], sys.argv[2])
+    if len(sys.argv) != 3:
+        print("Usage: python ./m3u_copy <source_folder> <destiantion_folder>")
+    else:
+        m3u_copy(sys.argv[1], sys.argv[2])
     return 0
 
 
